@@ -1,6 +1,6 @@
 #Proportional CSS3 Media Queries
 
-**Proportional Media Queries** are based upon the idea that **Responsive Web Design** is supposed to be fluid using *relative measurements*. With that thought process in mind, using pixels for media queries seems to be cumbersome at times. I got the idea that since it's standard practice to use relative units (ems, rems, %) for font sizing in responsive web design, why not use relative measurement units for targeting the viewport width. And that's exactly what I did. 
+**Proportional Media Queries** are based upon the idea that **Responsive Web Design** is supposed to be fluid using **relative measurements**. With that thought process in mind, using pixels for media queries seems to be cumbersome at times. I got the idea that since it's standard practice to use relative units (ems, rems, %) for font sizing in responsive web design, why not use relative measurement units for targeting the viewport width. And that's exactly what I did. 
 
 Using the standard formula for font-sizing: 100% = 16px = 1em = 14pt.
 So I applied that principle to the viewport width.
