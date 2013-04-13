@@ -28,7 +28,7 @@ Some standard device pixel ratio's to target:
   * 1.3
   * 1.25
 
-Resolutions to target
+Resolutions to target (use dpi or dpcm)
   * 300 dpi
   * 244 dpi
   * 192 dpi
@@ -36,4 +36,23 @@ Resolutions to target
   * 124.8 dpi
   * 120 dpi
 
-Use a combination of these to target viewport width and pixel densities to usher in a new era of responsive and adaptive web development
+Use a combination of these to target viewport width and pixel densities to usher in a new era of responsive and adaptive web development.
+
+In the css file, I've created a series of snippets, ready to use for your next responsive development endeavor.
+
+Don't forget to chain queries together to create complex media queries, to target multiple screen/device sizes and pixel densities.
+
+Also don't forget about other media attributes that you can query. If you've forgotten what they all are. Here's a list.
+  * width
+  * device-width
+  * height
+  * device-height
+  * orientation
+  * aspect-ration
+  * device-aspect-ratio
+  * color
+  * color-index
+  * monochrome
+  * resolution
+  * scan
+  * grid
