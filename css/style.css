@@ -1,6 +1,14 @@
 /*
 	Media Queries based on Viewport Width
 */
+/*Viewport = 1920px*/
+@media screen and (max-width: 120em){
+	 
+}
+/*Viewport = 1680px*/
+@media screen and (max-width: 105em){
+	 
+}
 /*Viewport = 1400px*/
 @media screen and (max-width: 87.5em){
 
