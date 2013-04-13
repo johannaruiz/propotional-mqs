@@ -56,3 +56,7 @@ Also don't forget about other media attributes that you can query. If you've for
   * resolution
   * scan
   * grid
+  * script (Level4 check for support)
+  * pointer (Level4 check for support)
+  * hover (Level4 check for support)
+  * luminosity (Level4 check for support)
