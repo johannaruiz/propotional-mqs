@@ -17,7 +17,8 @@ So I applied that principle to the viewport width.
   * Continue targeting screen sizes based on device width e.g. larger displays, tv's etc. 
 
 Also since there are the beautiful high resolution displays, it's becoming standard practice to serve up device and screen and device specific CSS based upon resolution and pixel density using media queries for the high resolution displays such as Apple's Retina Display. 
- e.g. @media(min-resolution : 192dpi), (-webkit-min-device-pixel-ratio: 2){
+
+e.g. @media(min-resolution : 192dpi), (-webkit-min-device-pixel-ratio: 2){
       /* Code Goes Here */
       }
 Some standard device pixel ratio's to target:
