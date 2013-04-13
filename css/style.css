@@ -1,84 +1,92 @@
 /*
 	Media Queries based on Viewport Width
 */
-
-/*1400px*/
+/*Viewport = 1400px*/
 @media screen and (max-width: 87.5em){
 
 }
-/*1200px*/
+/*Viewport = 1200px*/
 @media screen and (max-width: 75em){
 
 }
-/*1024px*/
+/*Viewport = 1024px*/
 @media screen and (max-width: 64em){
 
 }
-/*960px*/
+/*Viewport = 960px*/
 @media screen and (max-width: 60em){
 
 }
-/*800px*/
+/*Viewport = 800px*/
 @media screen and (max-width : 50em){
 
 }
 
-/*768px*/
+/*Viewport = 768px*/
 @media screen and (max-width : 48em){
 
 }
 
-/*600px*/
+/*Viewport = 600px*/
 @media screen and (max-width: 37.5em){
 
 }
 
-/*480px*/
+/*Viewport = 480px*/
 @media screen and (max-width: 30em){
 }
 
-/*320px*/
+/*Viewport = 320px*/
 @media screen and (max-width: 20em){
 
 }
 
-/*240px*/
+/*Viewport = 240px*/
 @media screen and (max-width: 15em){
 
 }
 
 
-/*High Resolution/Retina Display Media Queries*/
+/*
+	High Resolution/Retina Display Media Queries
+*/
+/*Pixel Density 3*/
 @media(-webkit-min-device-pixel-ratio: 3),(min-resolution: 192dpi){
 	
 }
-
+/*Pixel Density 2*/
 @media(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi){
 	
 }
-
+/*Pixel Density 1.5*/
 @media(-webkit-min-device-pixel-ratio: 1.5),(min-resolution: 124.8dpi){
 	
 }
-
+/*Pixel Density 1.25*/
 @media(-webkit-min-device-pixel-ratio: 1.25),(min-resolution: 120dpi){
 	
 }
 
 
-/*Printed Style Media Queries*/
+/*
+	Printed Style Media Queries
+*/
+/*Print Resolution 300 dpi*/
 @media print and (min-resolution: 300dpi){
 	
 }
 
+/*Print Resolution 144 dpi*/
 @media print and (min-resolution:144dpi){
 	
 }
 
+/*Print Resolution 96 dpi*/
 @media print and (min-resolution:96dpi){
 	
 }
 
+/*Print Resolution 72 dpi*/
 @media print and (resolution:72dpi){
 	
 }
