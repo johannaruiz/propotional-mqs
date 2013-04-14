@@ -24,7 +24,7 @@ e.g. @media(min-resolution : 192dpi), (-webkit-min-device-pixel-ratio: 2){
 Some standard device pixel ratio's to target:
   * **3**
   * **2**
-  * **1.5v
+  * **1.5v**
   * **1.3**
   * **1.25**
 
@@ -56,9 +56,9 @@ Also don't forget about other media attributes that you can query. If you've for
   * **resolution**
   * **scan**
   * **grid**
-  * **script** (*Level4 check for support*)
-  * **pointer** (*Level4 check for support*)
-  * **hover** (*Level4 check for support*)
-  * **luminosity** (*Level4 check for support*)
+  * **script (Level4 check for support)**
+  * **pointer (Level4 check for support)**
+  * **hover (Level4 check for support)**
+  * **luminosity (Level4 check for support)**
   
 Happy querying!
