@@ -24,7 +24,7 @@ e.g. @media(min-resolution : 192dpi), (-webkit-min-device-pixel-ratio: 2){
 Some standard device pixel ratio's to target:
   * **3**
   * **2**
-  * **1.5v**
+  * **1.5**
   * **1.3**
   * **1.25**
 
