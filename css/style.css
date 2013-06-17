@@ -3,45 +3,51 @@
 */
 /*Viewport = 1920px*/
 @media screen and (max-width: 120em){
-	 
+	
 }
+
 /*Viewport = 1680px*/
 @media screen and (max-width: 105em){
-	 
+	
 }
+
 /*Viewport = 1400px*/
 @media screen and (max-width: 87.5em){
 
 }
+
 /*Viewport = 1200px*/
 @media screen and (max-width: 75em){
-
+	
 }
+
 /*Viewport = 1024px*/
 @media screen and (max-width: 64em){
-
+	
 }
+
 /*Viewport = 960px*/
 @media screen and (max-width: 60em){
-
+	
 }
 /*Viewport = 800px*/
 @media screen and (max-width : 50em){
-
+	
 }
 
 /*Viewport = 768px*/
 @media screen and (max-width : 48em){
-
+	
 }
 
 /*Viewport = 600px*/
 @media screen and (max-width: 37.5em){
-
+	
 }
 
 /*Viewport = 480px*/
 @media screen and (max-width: 30em){
+	
 }
 
 /*Viewport = 320px*/
@@ -62,14 +68,17 @@
 @media(-webkit-min-device-pixel-ratio: 3),(min-resolution: 192dpi){
 	
 }
+
 /*Pixel Density 2*/
 @media(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi){
 	
 }
+
 /*Pixel Density 1.5*/
 @media(-webkit-min-device-pixel-ratio: 1.5),(min-resolution: 124.8dpi){
 	
 }
+
 /*Pixel Density 1.25*/
 @media(-webkit-min-device-pixel-ratio: 1.25),(min-resolution: 120dpi){
 	
