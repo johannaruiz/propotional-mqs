@@ -8,8 +8,9 @@
   Note: Do not forget the interpolation braces --> #{}
 </pre>
 
-*Try creating your media queries like objects or modules with the directives @mixin, @content and @include*
-**Below: Example of using the @mixin, @content @include directives to make complex object oriented media queries with ease**
+*Try creating your media queries like objects or modules with the directives @mixin, @content and @include* 
+
+**Below: Example of using the @mixin, @content @include directives to make complex object oriented media queries with ease**  
 
 ###Sass
 <pre>
