@@ -1,7 +1,15 @@
-#Sass Reference for constructing Media Queries
-*Try creating your media queries like objects or modules with @content and @include*
+##Sass Reference for constructing Media Queries
 
-##Sass
+<pre>
+  <code>
+    @media #{$media} and ($feature: $value){}   
+  </code>
+  Note: Do not forget the interpolation braces --> #{}
+</pre>
+
+*Try creating your media queries like objects or modules with the directives @mixin, @content and @include*
+
+###Sass
 <pre>
   <code>
     @mixin pmq($bp){
@@ -30,7 +38,7 @@
   </code>
 </pre>
 
-##CSS Output
+###CSS Output
 <pre>
   <code>
     @media screen and (width: 15em){
