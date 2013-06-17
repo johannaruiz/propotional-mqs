@@ -1,4 +1,6 @@
-##Sass Reference for constructing Media Queries
+##Sass Reference for constructing Media Queries  
+
+**Note** __Coming in the next few days, automated creation of media queries with looping through lists(arrays) of variables to construct media queries.__  
 
 ###Simple Media Query Construction
 <pre>
