@@ -42,7 +42,7 @@ $w: "width";
 //DEVICE-WIDTH
 $mxdw: "max-device-width";
 $mndw: "min-device-width";
-$dvw: "device-width";
+$dw: "device-width";
 
 //HEIGHT
 $mxh: "max-height";
@@ -52,7 +52,7 @@ $h: "height";
 //DEVICE HEIGHT
 $mxdh: "max-device-height";
 $mndh: "min-device-height";
-$dvh: "device-height";
+$dh: "device-height";
 
 //ORIENTATION
 $or_p: "portrait";
@@ -111,5 +111,14 @@ $lm_d: "luminosity: dim";
 $lm_n: "luminosity: normal";
 $lm_w: "luminosity: washed";
 
-//Units
-$base: 16;
+//Media Types
+$_a: "all";
+$_b: "braille";
+$_em: "embossed";
+$_h: "handheld";
+$_p: "print";
+$_pr: "projection";
+$_s: "screen";
+$_sp: "speech";
+$_ty: "tty";
+$_t: "tv";
