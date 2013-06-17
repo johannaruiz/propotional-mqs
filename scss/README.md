@@ -1,5 +1,5 @@
 #Sass Reference for constructing Media Queries
-* **Try creating your media queries like objects or modules with @content and @include** *
+*Try creating your media queries like objects or modules with @content and @include*
 
 ##Sass
 
