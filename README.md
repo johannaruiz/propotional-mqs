@@ -63,4 +63,4 @@ Also don't forget about other media attributes that you can query. If you've for
   
 Happy querying!
 
-**UPDATE** *4/14/13* Starting a **Sass/Scss** version.
+**UPDATE** *6/17/13* SCSS version Has been started.
