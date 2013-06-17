@@ -380,27 +380,3 @@ $wrp:72+$pu; // 72 dpi/ppi
 @media #{$_p} and ($mnr: $wrp){
   /*Web Resolution Print*/
 }
-
-//Example of using the @mixin, @content @include directives to make complex object oriented media queries with ease
-@mixin pmq($bp){
-  @if $bp == small{ 
-    @media #{$_s} and ($w: $tw_frty){ 
-      @content; 
-    }
-  }
-  @else if $bp == medium{ 
-    @media #{$_s} and ($w: $th_twty){ 
-      @content; 
-    }
-  }
-}
-@include pmq(small){
-  body{
-    width:100%;
-  }
-}
-@include pmq(medium){
-  body{
-    width:95%
-  }
-}

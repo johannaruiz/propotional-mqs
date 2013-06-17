@@ -238,13 +238,3 @@
 @media print and (min-resolution: 72dpi) {
   /*Web Resolution Print*/
 }
-@media screen and (width: 15em) {
-  body {
-    width: 100%;
-  }
-}
-@media screen and (width: 20em) {
-  body {
-    width: 95%;
-  }
-}
