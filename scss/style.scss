@@ -31,7 +31,143 @@
     speech
     tty
     tv
+    3d-glasses
     
+    Targets (List all targeted media e.g. aspect ratio 4:3, resolution 640x1136, dpi 326, dppx 2, diagonal 4" etc... )
+    ------------
+    Viewport
+    --------
+    1920px
+    1680px
+    1440px
+    1200px
+    1024px
+    960px
+    800px
+    768px
+    600px
+    480px
+    320px
+    240px
+    
+    Resolution
+    ----------
+    1920 x 1080
+    1680 x 1050
+    1440 x 900
+    1366 x 768
+    1280 x 800
+    1386 x 768
+    1024 x 768
+    800 x 600 
+    
+    Diagaonal
+    ---------
+    7"
+    11.6"
+    13.3"
+    14"
+    15.6"
+    17.3"
+    21"
+    27"
+    
+    Aspect Ratio
+    ------------
+    1:1
+    3:2
+    4:3
+    5:4
+    8:5
+    9:6
+    13:11
+    16:9
+    21:9
+    
+    dpi
+    ---
+    (General)
+    
+    (Specific)
+    
+    
+    dppx
+    ----
+    2
+    1.6667
+    1.325
+    1
+    
+    
+    device-pixel-ratio
+    ------------------
+    3
+    2
+    1
+    1.5
+    1.25
+    
+    Print Resolution
+    ----------------
+    300 dpi
+    144 dpi
+    96 dpi
+    72 dpi
+    
+    CSS Units of Measure
+    --------------------
+    
+    Absolute
+    --------
+    px = pixels == 1px is equal to 1/96th of 1in 
+    pt = points == 1pt is equal to 1/72nd of 1in
+    in = inches == 1in is equal to 2.54cm
+    cm = centimeters 
+    mm = millimeters
+    pc = pica == 1pc is equal to 12pt
+    
+    Relative
+    --------
+    % = percent
+    em = (1em = current font-size)
+    ex = (1ex = x-height of font-size == 1/2 current font-size)
+    rem = (1rem = compute value of font-size, refers to parent element initial value)
+    vw =  (1vw = 1% of viewport width)
+    vh = (1vh = 1% of viewport height)
+    vmin = (1vmin = 1% of viewport smaller dimension)
+    vmax = (1vmax = 1% of viewport larger dimension)
+    ch = (Equal to the advance measure of the "0" (ZERO, U+0030) glyph found in the font used to render it.)
+    gd = (Grid defined by layout-grid)
+    
+    Angle Units
+    -----------
+    deg = Degrees. There are 360 degrees in a full circle.
+    grad = Gradians, also known as "gons" or "grades". There are 400 gradians in a full circle.
+    rad = Radians. There are 2π radians in a full circle.
+    turn = Turns. There is 1 turn in a full circle.
+    
+    Time Units
+    ----------
+    s = seconds
+    ms = milliseconds
+    
+    Frequency Units
+    ---------------
+    Hz = Hertz == number of occurences per second
+    kHz = KiloHertz == 1kHz = 1000hz
+    
+    Resolution Units
+    ----------------
+    dpi = dots per inch
+    dpcm = dots per centimeter
+    dppx = dots per pixel unit
+    
+    Functional Notation Units 
+    for full explanation and usage see---> http://www.w3.org/TR/css3-values/#functional-notation
+    -------------------------
+    calc()
+    toggle()
+    attr()
 \*------------------------------------*/
 
 //WIDTH
@@ -67,6 +203,11 @@ $ar: "aspect-ratio";
 $mxdar: "max-device-aspect-ratio";
 $mndar: "min-device-aspect-ratio";
 $dar: "device-aspect-ratio";
+
+//Webkit Device Pixel Ratio
+$w_mxdpr: "webkit-max-device-pixel-ratio";
+$w_mndpr: "webkit-min-device-pixel-ratio";
+$w-dpr: "webkit-device-pixel-ratio";
 
 //Color
 $mxc: "max-color";
@@ -122,3 +263,32 @@ $_s: "screen";
 $_sp: "speech";
 $_ty: "tty";
 $_t: "tv";
+$tdg: "3d-glasses";
+
+
+//Targets 
+$bw: 16; // Base Width of 16.
+$u: "em"; // Relative Unit used can be em, rem, % etc... Any one that you prefer.
+$pu: "dpi"; // Print Resolution Unit
+
+$ntn_twty:1920/$bw+$u;
+$sxtn_ety:1680/$bw+$u;
+$frtn_frty:1440/$bw+$u;
+$tw_hun: 1200/$bw+$u;
+$t_twfr:1024/$bw+$u;
+$n_sxty:960/$bw+$u;
+$et_hun:800/$bw+$u;
+$s_sxty:768/$bw+$u;
+$sx_hun:600/$bw+$u;
+$fr_ety:480/$bw+$u;
+$th_twty:320/$bw+$u;
+$tw_frty:240/$bw+$u;
+
+$hrp:300+$pu; // 300 dpi
+$mrp:144+$pu; // 144 dpi/ppi
+$lrp:96+$pu; // 96 dpi/ppi
+$wrp:72+$pu; // 72 dpi/ppi
+
+//Constructing your media queries
+// e.g. @media #{$media-type-variable} and ($attribute-variable: $target-variable){}
+// Note: Do not forget the interpolation braces --> #{}
