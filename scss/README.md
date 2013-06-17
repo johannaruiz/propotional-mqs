@@ -16,10 +16,7 @@
         }
       }
     }
-  </code>
-</pre>
-<pre>
-  <code>
+    
     @include pmq(small){
       body{
         width:100%;
@@ -32,7 +29,6 @@
     }
   </code>
 </pre>
-
 
 ##CSS Output
 <pre>
