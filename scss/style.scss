@@ -295,11 +295,8 @@ $mrp:144+$pu; // 144 dpi/ppi
 $lrp:96+$pu; // 96 dpi/ppi
 $wrp:72+$pu; // 72 dpi/ppi
 
+//See README for instructions and Examples  
 
-//Constructing your media queries see README.md for examples
-// e.g. @media #{$media} and ($feature: $value){}
-// Note: Do not forget the interpolation braces --> #{}
-  
 /*------------------------------------*\
     Viewport Based Media Queries
 \*------------------------------------*/

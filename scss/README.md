@@ -1,5 +1,6 @@
 ##Sass Reference for constructing Media Queries
 
+###Simple Media Query Construction
 <pre>
   <code>
     @media #{$media} and ($feature: $value){}   
