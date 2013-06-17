@@ -284,6 +284,12 @@ $fr_ety:480/$bw+$u;
 $th_twty:320/$bw+$u;
 $tw_frty:240/$bw+$u;
 
+//Device Resolutions
+$ont: 192+$pu;
+$otf: 124.8+$pu;
+$oty: 120+$pu;
+
+// Print Resolutions
 $hrp:300+$pu; // 300 dpi/ppi
 $mrp:144+$pu; // 144 dpi/ppi
 $lrp:96+$pu; // 96 dpi/ppi
@@ -345,17 +351,59 @@ $wrp:72+$pu; // 72 dpi/ppi
 }
 
 /*------------------------------------*\
+    High Resolution Displays
+\*------------------------------------*/
+@media($w_mndpr: 3), ($mnr : $ont){
+  /*Pixel Density 3*/
+}
+@media($w_mndpr: 2), ($mnr : $ont){
+ /*Pixel Density 2*/ 
+}
+@media($w_mndpr: 1.5), ($mnr : $otf){
+  /*Pixel Density 1.5*/
+}
+@media($w_mndpr: 3), ($mnr : $oty){
+ /*Pixel Density 1.25*/ 
+}
+/*------------------------------------*\
     Print
 \*------------------------------------*/
 @media #{$_p} and ($mnr: $hrp){
   /*High Resolution Print*/
 }
+
 @media #{$_p} and ($mnr: $mrp){
   /*Medium Resolution Print*/
 }
+
 @media #{$_p} and ($mnr: $lrp){
   /*Low Resolution Print*/
 }
+
 @media #{$_p} and ($mnr: $wrp){
   /*Web Resolution Print*/
+}
+
+//Example of using the @mixin, @content @include directives to make complex object oriented media queries with ease
+@mixin pmq($bp){
+  @if $bp == small{ 
+    @media #{$_s} and ($w: $tw_frty){ 
+      @content; 
+    }
+  }
+  @else if $bp == medium{ 
+    @media #{$_s} and ($w: $th_twty){ 
+      @content; 
+    }
+  }
+}
+@include pmq(small){
+  body{
+    width:100%;
+  }
+}
+@include pmq(medium){
+  body{
+    width:95%
+  }
 }

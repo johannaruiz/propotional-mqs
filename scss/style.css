@@ -173,37 +173,78 @@
     Viewport Based Media Queries
 \*------------------------------------*/
 @media print and (max-width: 120em) {
-  /*Viewport width 1920*/ }
+  /*Viewport width 1920*/
+}
 @media print and (max-width: 105em) {
-  /*Viewport width 1680 */ }
+  /*Viewport width 1680 */
+}
 @media print and (max-width: 90em) {
-  /*Viewport width 1440*/ }
+  /*Viewport width 1440*/
+}
 @media print and (max-width: 75em) {
-  /*Viewport width 1200*/ }
+  /*Viewport width 1200*/
+}
 @media print and (max-width: 64em) {
-  /*Viewport width 1024*/ }
+  /*Viewport width 1024*/
+}
 @media print and (max-width: 60em) {
-  /*Viewport width 960*/ }
+  /*Viewport width 960*/
+}
 @media print and (max-width: 50em) {
-  /*Viewport width 800*/ }
+  /*Viewport width 800*/
+}
 @media print and (max-width: 48em) {
-  /*Viewport width 768*/ }
+  /*Viewport width 768*/
+}
 @media print and (max-width: 37.5em) {
-  /*Viewport width 600*/ }
+  /*Viewport width 600*/
+}
 @media print and (max-width: 30em) {
-  /*Viewport width 480*/ }
+  /*Viewport width 480*/
+}
 @media print and (max-width: 20em) {
-  /*Viewport width 320*/ }
+  /*Viewport width 320*/
+}
 @media print and (max-width: 15em) {
-  /*Viewport width 240*/ }
+  /*Viewport width 240*/
+}
+/*------------------------------------*\
+    High Resolution Displays
+\*------------------------------------*/
+@media (webkit-min-device-pixel-ratio: 3), (min-resolution: 192dpi) {
+  /*Pixel Density 3*/
+}
+@media (webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /*Pixel Density 2*/
+}
+@media (webkit-min-device-pixel-ratio: 1.5), (min-resolution: 124.8dpi) {
+  /*Pixel Density 1.5*/
+}
+@media (webkit-min-device-pixel-ratio: 3), (min-resolution: 120dpi) {
+  /*Pixel Density 1.25*/
+}
 /*------------------------------------*\
     Print
 \*------------------------------------*/
 @media print and (min-resolution: 300dpi) {
-  /*High Resolution Print*/ }
+  /*High Resolution Print*/
+}
 @media print and (min-resolution: 144dpi) {
-  /*Medium Resolution Print*/ }
+  /*Medium Resolution Print*/
+}
 @media print and (min-resolution: 96dpi) {
-  /*Low Resolution Print*/ }
+  /*Low Resolution Print*/
+}
 @media print and (min-resolution: 72dpi) {
-  /*Web Resolution Print*/ }
+  /*Web Resolution Print*/
+}
+@media screen and (width: 15em) {
+  body {
+    width: 100%;
+  }
+}
+@media screen and (width: 20em) {
+  body {
+    width: 95%;
+  }
+}
