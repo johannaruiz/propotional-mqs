@@ -2,7 +2,7 @@
 
 **Note:** *Coming in the next few days, automated creation of media queries with looping through lists(arrays) of variables to construct media queries dynmaically. Also creation of other SCSS files to modularize code.* **Stay Tuned for Updates.**  
 
-###Simple Media Query Construction
+###Simple Media Query Constructiong
 <pre>
   <code>
     @media #{$media} and ($feature: $value){}   
@@ -14,7 +14,7 @@
 
 Below is an example of using the @mixin, @content @include directives to make complex object oriented media queries with ease  
 
-###Sass
+###SCSS
 <pre>
   <code>
     @mixin pmq($bp){
