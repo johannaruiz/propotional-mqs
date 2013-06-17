@@ -1,0 +1,115 @@
+/*------------------------------------*\
+    Media Attributes
+    ----------------
+    width
+    device-width
+    height
+    device-height
+    orientation
+    aspect-ratio
+    device-aspect-ratio
+    color
+    color-index
+    monochrome
+    resolution
+    scan
+    grid
+    script (Level4 check for support)
+    pointer (Level4 check for support)
+    hover (Level4 check for support)
+    luminosity (Level4 check for support)
+    
+    Media Types
+    -----------
+    all
+    braille
+    embossed
+    handheld
+    print
+    projection
+    screen
+    speech
+    tty
+    tv
+    
+\*------------------------------------*/
+
+//WIDTH
+$mxw: "max-width";
+$mnw: "min-width";
+$w: "width";
+
+//DEVICE-WIDTH
+$mxdw: "max-device-width";
+$mndw: "min-device-width";
+$dvw: "device-width";
+
+//HEIGHT
+$mxh: "max-height";
+$mnh: "min-height";
+$h: "height";
+
+//DEVICE HEIGHT
+$mxdh: "max-device-height";
+$mndh: "min-device-height";
+$dvh: "device-height";
+
+//ORIENTATION
+$or_p: "portrait";
+$or_l: "landscape";
+
+//ASPECT-RATIO
+$mxar: "max-aspect-ratio";
+$mnar: "min-aspect-ratio";
+$ar: "aspect-ratio";
+
+//DEVICE-ASPECT-RATIO
+$mxdar: "max-device-aspect-ratio";
+$mndar: "min-device-aspect-ratio";
+$dar: "device-aspect-ratio";
+
+//Color
+$mxc: "max-color";
+$mnc: "min-color";
+$c: "color";
+
+//COLOR-INDEX
+$mxci: "max-color-index";
+$mnci: "min-color-index";
+$ci: "color-index";
+
+//MONOCHROME
+$mxmc: "max-monochrome";
+$mnmc: "min-monochrome";
+$mc: "monochrome";
+
+//RESOLUTION
+$mxr: "max-resolution";
+$mnr: "min-resolution";
+$r: "resolution";
+
+//SCAN
+$sc_i: "interlaced";
+$sc_p: "progressive";
+ 
+//GRID
+$g: "grid";
+
+//SCRIPT
+$sc: "script";
+
+//POINTER
+$pt_n:"pointer: nones";
+$pt_c:"pointer: coarse";
+$pt_f: "pointer: fine";
+
+//HOVER
+$hv: "hover";
+
+//LUMINOSITY
+$lm_d: "luminosity: dim";
+$lm_n: "luminosity: normal";
+$lm_w: "luminosity: washed";
+
+//Units
+$base: 16;

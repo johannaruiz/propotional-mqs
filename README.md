@@ -48,7 +48,7 @@ Also don't forget about other media attributes that you can query. If you've for
   * **height**
   * **device-height**
   * **orientation**
-  * **aspect-ration**
+  * **aspect-ratio**
   * **device-aspect-ratio**
   * **color**
   * **color-index**
