@@ -169,3 +169,41 @@
     toggle()
     attr()
 \*------------------------------------*/
+/*------------------------------------*\
+    Viewport Based Media Queries
+\*------------------------------------*/
+@media print and (max-width: 120em) {
+  /*Viewport width 1920*/ }
+@media print and (max-width: 105em) {
+  /*Viewport width 1680 */ }
+@media print and (max-width: 90em) {
+  /*Viewport width 1440*/ }
+@media print and (max-width: 75em) {
+  /*Viewport width 1200*/ }
+@media print and (max-width: 64em) {
+  /*Viewport width 1024*/ }
+@media print and (max-width: 60em) {
+  /*Viewport width 960*/ }
+@media print and (max-width: 50em) {
+  /*Viewport width 800*/ }
+@media print and (max-width: 48em) {
+  /*Viewport width 768*/ }
+@media print and (max-width: 37.5em) {
+  /*Viewport width 600*/ }
+@media print and (max-width: 30em) {
+  /*Viewport width 480*/ }
+@media print and (max-width: 20em) {
+  /*Viewport width 320*/ }
+@media print and (max-width: 15em) {
+  /*Viewport width 240*/ }
+/*------------------------------------*\
+    Print
+\*------------------------------------*/
+@media print and (min-resolution: 300dpi) {
+  /*High Resolution Print*/ }
+@media print and (min-resolution: 144dpi) {
+  /*Medium Resolution Print*/ }
+@media print and (min-resolution: 96dpi) {
+  /*Low Resolution Print*/ }
+@media print and (min-resolution: 72dpi) {
+  /*Web Resolution Print*/ }
