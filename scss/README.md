@@ -1,6 +1,6 @@
 ##Sass Reference for constructing Media Queries  
 
-**Note:** *Coming in the next few days, automated creation of media queries with looping through lists(arrays) of variables to construct media queries.*  
+**Note:** *Coming in the next few days, automated creation of media queries with looping through lists(arrays) of variables to construct media queries dynmaically. Also creation of other SCSS files to modularize code.* **Stay Tuned for Updates.**  
 
 ###Simple Media Query Construction
 <pre>
