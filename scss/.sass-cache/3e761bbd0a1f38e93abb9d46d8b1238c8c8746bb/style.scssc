@@ -1,869 +1,0 @@
-3.2.8 (Media Mark)
-ddcff4fe6a2818b06715078a222c70e40af6340d
-o:Sass::Tree::RootNode
-:
-@linei:@has_childrenT:@template"q /*------------------------------------*\
-    @author Johanna Ruiz (http:johannabruiz.com) 
-    MIT license (http://www.opensource.org/licenses/mit-license.php)
-    Last update: 2013-6-17
-\*------------------------------------*/
-/*------------------------------------*\
-    Media Attributes
-    ----------------
-    width
-    device-width
-    height
-    device-height
-    orientation
-    aspect-ratio
-    device-aspect-ratio
-    color
-    color-index
-    monochrome
-    resolution
-    scan
-    grid
-    script (Level4 check for support)
-    pointer (Level4 check for support)
-    hover (Level4 check for support)
-    luminosity (Level4 check for support)
-    
-    Media Types
-    -----------
-    all
-    aural
-    braille
-    embossed
-    handheld
-    print
-    projection
-    screen
-    speech
-    tty
-    tv
-    3d-glasses
-    
-    Targets (List all targeted media e.g. aspect ratio 4:3, resolution 640x1136, dpi 326, dppx 2, diagonal 4" etc... )
-    ------------
-    Viewport
-    --------
-    1920px
-    1680px
-    1440px
-    1200px
-    1024px
-    960px
-    800px
-    768px
-    600px
-    480px
-    320px
-    240px
-    
-    Resolution
-    ----------
-    1920 x 1080
-    1680 x 1050
-    1440 x 900
-    1366 x 768
-    1280 x 800
-    1386 x 768
-    1024 x 768
-    800 x 600 
-    
-    Diagaonal
-    ---------
-    7"
-    11.6"
-    13.3"
-    14"
-    15.6"
-    17.3"
-    21"
-    27"
-    
-    Aspect Ratio
-    ------------
-    1:1
-    3:2
-    4:3
-    5:4
-    8:5
-    9:6
-    13:11
-    16:9
-    21:9
-    
-    dpi
-    ---
-    (General)
-    
-    (Specific)
-    
-    
-    dppx
-    ----
-    2
-    1.6667
-    1.325
-    1
-    
-    
-    device-pixel-ratio
-    ------------------
-    3
-    2
-    1
-    1.5
-    1.25
-    
-    Print Resolution
-    ----------------
-    300 dpi
-    144 dpi
-    96 dpi
-    72 dpi
-    
-    CSS Units of Measure
-    --------------------
-    
-    Absolute
-    --------
-    px = pixels == 1px is equal to 1/96th of 1in 
-    pt = points == 1pt is equal to 1/72nd of 1in
-    in = inches == 1in is equal to 2.54cm
-    cm = centimeters 
-    mm = millimeters
-    pc = pica == 1pc is equal to 12pt
-    
-    Relative
-    --------
-    % = percent
-    em = (1em = current font-size)
-    ex = (1ex = x-height of font-size == 1/2 current font-size)
-    rem = (1rem = compute value of font-size, refers to parent element initial value)
-    vw =  (1vw = 1% of viewport width)
-    vh = (1vh = 1% of viewport height)
-    vmin = (1vmin = 1% of viewport smaller dimension)
-    vmax = (1vmax = 1% of viewport larger dimension)
-    ch = (Equal to the advance measure of the "0" (ZERO, U+0030) glyph found in the font used to render it.)
-    gd = (Grid defined by layout-grid)
-    
-    Angle Units
-    -----------
-    deg = Degrees. There are 360 degrees in a full circle.
-    grad = Gradians, also known as "gons" or "grades". There are 400 gradians in a full circle.
-    rad = Radians. There are 2œÄ radians in a full circle.
-    turn = Turns. There is 1 turn in a full circle.
-    
-    Time Units
-    ----------
-    s = seconds
-    ms = milliseconds
-    
-    Frequency Units
-    ---------------
-    Hz = Hertz == number of occurences per second
-    kHz = KiloHertz == 1kHz = 1000hz
-    
-    Resolution Units
-    ----------------
-    dpi = dots per inch
-    dpcm = dots per centimeter
-    dppx = dots per pixel unit
-    
-    Functional Notation Units 
-    for full explanation and usage see---> http://www.w3.org/TR/css3-values/#functional-notation
-    -------------------------
-    calc()
-    toggle()
-    attr()
-    
-    Keywords
-    --------
-    all
-    not
-    only
-    (I think I'm forgetting some that are useful)
-\*------------------------------------*/
-
-//WIDTH
-$mxw: "max-width";
-$mnw: "min-width";
-$w: "width";
-
-//DEVICE-WIDTH
-$mxdw: "max-device-width";
-$mndw: "min-device-width";
-$dw: "device-width";
-
-//HEIGHT
-$mxh: "max-height";
-$mnh: "min-height";
-$h: "height";
-
-//DEVICE HEIGHT
-$mxdh: "max-device-height";
-$mndh: "min-device-height";
-$dh: "device-height";
-
-//ORIENTATION
-$or_p: "orientation: portrait";
-$or_l: "orientation: landscape";
-
-//ASPECT-RATIO
-$mxar: "max-aspect-ratio";
-$mnar: "min-aspect-ratio";
-$ar: "aspect-ratio";
-
-//DEVICE-ASPECT-RATIO
-$mxdar: "max-device-aspect-ratio";
-$mndar: "min-device-aspect-ratio";
-$dar: "device-aspect-ratio";
-
-//Webkit Device Pixel Ratio
-$w_mxdpr: "webkit-max-device-pixel-ratio";
-$w_mndpr: "webkit-min-device-pixel-ratio";
-$w-dpr: "webkit-device-pixel-ratio";
-
-//Color
-$mxc: "max-color";
-$mnc: "min-color";
-$c: "color";
-
-//COLOR-INDEX
-$mxci: "max-color-index";
-$mnci: "min-color-index";
-$ci: "color-index";
-
-//MONOCHROME
-$mxmc: "max-monochrome";
-$mnmc: "min-monochrome";
-$mc: "monochrome";
-
-//RESOLUTION
-$mxr: "max-resolution";
-$mnr: "min-resolution";
-$r: "resolution";
-
-//SCAN
-$sc_i: "scan: interlaced";
-$sc_p: "scan: progressive";
- 
-//GRID
-$g: "grid";
-
-//SCRIPT
-$sc: "script";
-
-//POINTER
-$pt_n:"pointer: none";
-$pt_c:"pointer: coarse";
-$pt_f: "pointer: fine";
-
-//HOVER
-$hv: "hover";
-
-//LUMINOSITY
-$lm_d: "luminosity: dim";
-$lm_n: "luminosity: normal";
-$lm_w: "luminosity: washed";
-
-//Media Types
-$_a: "all";
-$_ar: "aural";
-$_b: "braille";
-$_em: "embossed";
-$_h: "handheld";
-$_p: "print";
-$_pr: "projection";
-$_s: "screen";
-$_sp: "speech";
-$_ty: "tty";
-$_t: "tv";
-$tdg: "3d-glasses";
-
-
-//Targets 
-$bw: 16; // Base Width of 16.
-$u: "em"; // Relative Unit used can be em, rem, % etc... Any one that you prefer.
-$pu: "dpi"; // Print Resolution Unit
-
-$ntn_twty:1920/$bw+$u;
-$sxtn_ety:1680/$bw+$u;
-$frtn_frty:1440/$bw+$u;
-$tw_hun: 1200/$bw+$u;
-$t_twfr:1024/$bw+$u;
-$n_sxty:960/$bw+$u;
-$et_hun:800/$bw+$u;
-$s_sxty:768/$bw+$u;
-$sx_hun:600/$bw+$u;
-$fr_ety:480/$bw+$u;
-$th_twty:320/$bw+$u;
-$tw_frty:240/$bw+$u;
-
-//Device Resolutions
-$ont: 192+$pu;
-$otf: 124.8+$pu;
-$oty: 120+$pu;
-
-// Print Resolutions
-$hrp:300+$pu; // 300 dpi/ppi
-$mrp:144+$pu; // 144 dpi/ppi
-$lrp:96+$pu; // 96 dpi/ppi
-$wrp:72+$pu; // 72 dpi/ppi
-
-//See README for instructions and Examples  
-
-/*------------------------------------*\
-    Viewport Based Media Queries
-\*------------------------------------*/
-@media #{$_p} and ($mxw: $ntn_twty){
-  /*Viewport width 1920*/
-}
-
-@media #{$_p} and ($mxw: $sxtn_ety){
-  /*Viewport width 1680 */
-}
-
-@media #{$_p} and ($mxw: $frtn_frty){
-  /*Viewport width 1440*/
-}
-
-@media #{$_p} and ($mxw: $tw_hun){
-  /*Viewport width 1200*/
-}
-
-@media #{$_p} and ($mxw: $t_twfr){
-  /*Viewport width 1024*/
-}
-@media #{$_p} and ($mxw: $n_sxty){
-  /*Viewport width 960*/
-}
-
-@media #{$_p} and ($mxw: $et_hun){
-  /*Viewport width 800*/
-}
-
-@media #{$_p} and ($mxw: $s_sxty){
-  /*Viewport width 768*/
-}
-
-@media #{$_p} and ($mxw: $sx_hun){
-  /*Viewport width 600*/
-}
-
-@media #{$_p} and ($mxw: $fr_ety){
-  /*Viewport width 480*/
-}
-
-@media #{$_p} and ($mxw: $th_twty){
-  /*Viewport width 320*/
-}
-
-@media #{$_p} and ($mxw: $tw_frty){
-  /*Viewport width 240*/
-}
-
-/*------------------------------------*\
-    Device Orientation
-\*------------------------------------*/
-@media($or_p){
-  /*Portrait*/
-}
-
-@media($or_l){
-  /*Landscape*/
-}
-
-/*------------------------------------*\
-    High Resolution Displays
-\*------------------------------------*/
-@media($w_mndpr: 3), ($mnr : $ont){
-  /*Pixel Density 3*/
-}
-
-@media($w_mndpr: 2), ($mnr : $ont){
- /*Pixel Density 2*/ 
-}
-
-@media($w_mndpr: 1.5), ($mnr : $otf){
-  /*Pixel Density 1.5*/
-}
-
-@media($w_mndpr: 3), ($mnr : $oty){
- /*Pixel Density 1.25*/ 
-}
-
-/*------------------------------------*\
-    Print
-\*------------------------------------*/
-@media #{$_p} and ($mnr: $hrp){
-  /*High Resolution Print*/
-}
-
-@media #{$_p} and ($mnr: $mrp){
-  /*Medium Resolution Print*/
-}
-
-@media #{$_p} and ($mnr: $lrp){
-  /*Low Resolution Print*/
-}
-
-@media #{$_p} and ($mnr: $wrp){
-  /*Web Resolution Print*/
-}
-
-/*------------------------------------*\
-    Scan:TV
-\*------------------------------------*/
-
-@media #{$_t} and ($sc_p){
-  /*Scan:Progressive*/
-}
-
-@media #{$_t} and ($sc_i){
-  /*Scan:Interlace*/
-}
-
-/*------------------------------------*\
-    CSS Level 4
-\*------------------------------------*/
-
-@media #{$_s} and ($hv){
-  /*Hover*/
-}
-
-@media #{$_s} and ($pt_n){
-  /*Pointer:None*/
-}
-
-@media #{$_s} and ($pt_c){
-  /*Pointer:Coarse*/
-}
-@media #{$_s} and ($pt_f){
-  /*Pointer:Fine*/
-}
-
-@media #{$_s} and ($lm_d){
-  /*Luminosity:Dim*/
-}
-
-@media #{$_s} and ($lm_n){
-  /*Luminosity:Normal*/
-}
-
-@media #{$_s} and ($lm_w){
-  /*Luminosity:Washed*/
-}:@children[ïo:Sass::Tree::CommentNode
-:@value["„/*------------------------------------*\
-    @author Johanna Ruiz (http:johannabruiz.com) 
-    MIT license (http://www.opensource.org/licenses/mit-license.php)
-    Last update: 2013-6-17
-\*------------------------------------*/:
-@type:normal;i;	[ :@options{ o;
-
-;["^/*------------------------------------*\
-    Media Attributes
-    ----------------
-    width
-    device-width
-    height
-    device-height
-    orientation
-    aspect-ratio
-    device-aspect-ratio
-    color
-    color-index
-    monochrome
-    resolution
-    scan
-    grid
-    script (Level4 check for support)
-    pointer (Level4 check for support)
-    hover (Level4 check for support)
-    luminosity (Level4 check for support)
-    
-    Media Types
-    -----------
-    all
-    aural
-    braille
-    embossed
-    handheld
-    print
-    projection
-    screen
-    speech
-    tty
-    tv
-    3d-glasses
-    
-    Targets (List all targeted media e.g. aspect ratio 4:3, resolution 640x1136, dpi 326, dppx 2, diagonal 4" etc... )
-    ------------
-    Viewport
-    --------
-    1920px
-    1680px
-    1440px
-    1200px
-    1024px
-    960px
-    800px
-    768px
-    600px
-    480px
-    320px
-    240px
-    
-    Resolution
-    ----------
-    1920 x 1080
-    1680 x 1050
-    1440 x 900
-    1366 x 768
-    1280 x 800
-    1386 x 768
-    1024 x 768
-    800 x 600 
-    
-    Diagaonal
-    ---------
-    7"
-    11.6"
-    13.3"
-    14"
-    15.6"
-    17.3"
-    21"
-    27"
-    
-    Aspect Ratio
-    ------------
-    1:1
-    3:2
-    4:3
-    5:4
-    8:5
-    9:6
-    13:11
-    16:9
-    21:9
-    
-    dpi
-    ---
-    (General)
-    
-    (Specific)
-    
-    
-    dppx
-    ----
-    2
-    1.6667
-    1.325
-    1
-    
-    
-    device-pixel-ratio
-    ------------------
-    3
-    2
-    1
-    1.5
-    1.25
-    
-    Print Resolution
-    ----------------
-    300 dpi
-    144 dpi
-    96 dpi
-    72 dpi
-    
-    CSS Units of Measure
-    --------------------
-    
-    Absolute
-    --------
-    px = pixels == 1px is equal to 1/96th of 1in 
-    pt = points == 1pt is equal to 1/72nd of 1in
-    in = inches == 1in is equal to 2.54cm
-    cm = centimeters 
-    mm = millimeters
-    pc = pica == 1pc is equal to 12pt
-    
-    Relative
-    --------
-    % = percent
-    em = (1em = current font-size)
-    ex = (1ex = x-height of font-size == 1/2 current font-size)
-    rem = (1rem = compute value of font-size, refers to parent element initial value)
-    vw =  (1vw = 1% of viewport width)
-    vh = (1vh = 1% of viewport height)
-    vmin = (1vmin = 1% of viewport smaller dimension)
-    vmax = (1vmax = 1% of viewport larger dimension)
-    ch = (Equal to the advance measure of the "0" (ZERO, U+0030) glyph found in the font used to render it.)
-    gd = (Grid defined by layout-grid)
-    
-    Angle Units
-    -----------
-    deg = Degrees. There are 360 degrees in a full circle.
-    grad = Gradians, also known as "gons" or "grades". There are 400 gradians in a full circle.
-    rad = Radians. There are 2œÄ radians in a full circle.
-    turn = Turns. There is 1 turn in a full circle.
-    
-    Time Units
-    ----------
-    s = seconds
-    ms = milliseconds
-    
-    Frequency Units
-    ---------------
-    Hz = Hertz == number of occurences per second
-    kHz = KiloHertz == 1kHz = 1000hz
-    
-    Resolution Units
-    ----------------
-    dpi = dots per inch
-    dpcm = dots per centimeter
-    dppx = dots per pixel unit
-    
-    Functional Notation Units 
-    for full explanation and usage see---> http://www.w3.org/TR/css3-values/#functional-notation
-    -------------------------
-    calc()
-    toggle()
-    attr()
-    
-    Keywords
-    --------
-    all
-    not
-    only
-    (I think I'm forgetting some that are useful)
-\*------------------------------------*/;;;i;	[ ;@o;
-
-;["/*WIDTH */;:silent;i∫;	[ ;@o:Sass::Tree::VariableNode;iª:@guarded0:
-@name"mxw;	[ :
-@expro:Sass::Script::String	;"max-width;:string;iª;@;@o;;iº;0;"mnw;	[ ;o;	;"min-width;;;iº;@;@o;;iΩ;0;"w;	[ ;o;	;"
-width;;;iΩ;@;@o;
-
-;["/*DEVICE-WIDTH */;;;iø;	[ ;@o;;i¿;0;"	mxdw;	[ ;o;	;"max-device-width;;;i¿;@;@o;;i¡;0;"	mndw;	[ ;o;	;"min-device-width;;;i¡;@;@o;;i¬;0;"dw;	[ ;o;	;"device-width;;;i¬;@;@o;
-
-;["/*HEIGHT */;;;iƒ;	[ ;@o;;i≈;0;"mxh;	[ ;o;	;"max-height;;;i≈;@;@o;;i∆;0;"mnh;	[ ;o;	;"min-height;;;i∆;@;@o;;i«;0;"h;	[ ;o;	;"height;;;i«;@;@o;
-
-;["/*DEVICE HEIGHT */;;;i…;	[ ;@o;;i ;0;"	mxdh;	[ ;o;	;"max-device-height;;;i ;@;@o;;iÀ;0;"	mndh;	[ ;o;	;"min-device-height;;;iÀ;@;@o;;iÃ;0;"dh;	[ ;o;	;"device-height;;;iÃ;@;@o;
-
-;["/*ORIENTATION */;;;iŒ;	[ ;@o;;iœ;0;"	or_p;	[ ;o;	;"orientation: portrait;;;iœ;@;@o;;i–;0;"	or_l;	[ ;o;	;"orientation: landscape;;;i–;@;@o;
-
-;["/*ASPECT-RATIO */;;;i“;	[ ;@o;;i”;0;"	mxar;	[ ;o;	;"max-aspect-ratio;;;i”;@;@o;;i‘;0;"	mnar;	[ ;o;	;"min-aspect-ratio;;;i‘;@;@o;;i’;0;"ar;	[ ;o;	;"aspect-ratio;;;i’;@;@o;
-
-;["/*DEVICE-ASPECT-RATIO */;;;i◊;	[ ;@o;;iÿ;0;"
-mxdar;	[ ;o;	;"max-device-aspect-ratio;;;iÿ;@;@o;;iŸ;0;"
-mndar;	[ ;o;	;"min-device-aspect-ratio;;;iŸ;@;@o;;i⁄;0;"dar;	[ ;o;	;"device-aspect-ratio;;;i⁄;@;@o;
-
-;["#/*Webkit Device Pixel Ratio */;;;i‹;	[ ;@o;;i›;0;"w_mxdpr;	[ ;o;	;""webkit-max-device-pixel-ratio;;;i›;@;@o;;iﬁ;0;"w_mndpr;	[ ;o;	;""webkit-min-device-pixel-ratio;;;iﬁ;@;@o;;iﬂ;0;"
-w-dpr;	[ ;o;	;"webkit-device-pixel-ratio;;;iﬂ;@;@o;
-
-;["/*Color */;;;i·;	[ ;@o;;i‚;0;"mxc;	[ ;o;	;"max-color;;;i‚;@;@o;;i„;0;"mnc;	[ ;o;	;"min-color;;;i„;@;@o;;i‰;0;"c;	[ ;o;	;"
-color;;;i‰;@;@o;
-
-;["/*COLOR-INDEX */;;;iÊ;	[ ;@o;;iÁ;0;"	mxci;	[ ;o;	;"max-color-index;;;iÁ;@;@o;;iË;0;"	mnci;	[ ;o;	;"min-color-index;;;iË;@;@o;;iÈ;0;"ci;	[ ;o;	;"color-index;;;iÈ;@;@o;
-
-;["/*MONOCHROME */;;;iÎ;	[ ;@o;;iÏ;0;"	mxmc;	[ ;o;	;"max-monochrome;;;iÏ;@;@o;;iÌ;0;"	mnmc;	[ ;o;	;"min-monochrome;;;iÌ;@;@o;;iÓ;0;"mc;	[ ;o;	;"monochrome;;;iÓ;@;@o;
-
-;["/*RESOLUTION */;;;i;	[ ;@o;;iÒ;0;"mxr;	[ ;o;	;"max-resolution;;;iÒ;@;@o;;iÚ;0;"mnr;	[ ;o;	;"min-resolution;;;iÚ;@;@o;;iÛ;0;"r;	[ ;o;	;"resolution;;;iÛ;@;@o;
-
-;["/*SCAN */;;;iı;	[ ;@o;;iˆ;0;"	sc_i;	[ ;o;	;"scan: interlaced;;;iˆ;@;@o;;i˜;0;"	sc_p;	[ ;o;	;"scan: progressive;;;i˜;@;@o;
-
-;["/*GRID */;;;i˘;	[ ;@o;;i˙;0;"g;	[ ;o;	;"	grid;;;i˙;@;@o;
-
-;["/*SCRIPT */;;;i¸;	[ ;@o;;i˝;0;"sc;	[ ;o;	;"script;;;i˝;@;@o;
-
-;["/*POINTER */;;;iˇ;	[ ;@o;;i ;0;"	pt_n;	[ ;o;	;"pointer: none;;;i ;@;@o;;i;0;"	pt_c;	[ ;o;	;"pointer: coarse;;;i;@;@o;;i;0;"	pt_f;	[ ;o;	;"pointer: fine;;;i;@;@o;
-
-;["/*HOVER */;;;i;	[ ;@o;;i;0;"hv;	[ ;o;	;"
-hover;;;i;@;@o;
-
-;["/*LUMINOSITY */;;;i;	[ ;@o;;i;0;"	lm_d;	[ ;o;	;"luminosity: dim;;;i;@;@o;;i	;0;"	lm_n;	[ ;o;	;"luminosity: normal;;;i	;@;@o;;i
-;0;"	lm_w;	[ ;o;	;"luminosity: washed;;;i
-;@;@o;
-
-;["/*Media Types */;;;i;	[ ;@o;;i;0;"_a;	[ ;o;	;"all;;;i;@;@o;;i;0;"_ar;	[ ;o;	;"
-aural;;;i;@;@o;;i;0;"_b;	[ ;o;	;"braille;;;i;@;@o;;i;0;"_em;	[ ;o;	;"embossed;;;i;@;@o;;i;0;"_h;	[ ;o;	;"handheld;;;i;@;@o;;i;0;"_p;	[ ;o;	;"
-print;;;i;@;@o;;i;0;"_pr;	[ ;o;	;"projection;;;i;@;@o;;i;0;"_s;	[ ;o;	;"screen;;;i;@;@o;;i;0;"_sp;	[ ;o;	;"speech;;;i;@;@o;;i;0;"_ty;	[ ;o;	;"tty;;;i;@;@o;;i;0;"_t;	[ ;o;	;"tv;;;i;@;@o;;i;0;"tdg;	[ ;o;	;"3d-glasses;;;i;@;@o;
-
-;["/*Targets  */;;;i;	[ ;@o;;i;0;"bw;	[ ;o:Sass::Script::Number;i:@denominator_units[ ;i:@numerator_units[ :@original"16;@;@o;
-
-;["/* Base Width of 16. */;;;i;	[ ;@o;;i;0;"u;	[ ;o;	;"em;;;i;@;@o;
-
-;["O/* Relative Unit used can be em, rem, % etc... Any one that you prefer. */;;;i;	[ ;@o;;i;0;"pu;	[ ;o;	;"dpi;;;i;@;@o;
-
-;[" /* Print Resolution Unit */;;;i;	[ ;@o;;i ;0;"ntn_twty;	[ ;o:Sass::Script::Operation
-;i :@operand2o:Sass::Script::Variable	;i :@underscored_name"u;"u;@;@:@operator:	plus:@operand1o;
-;i ;o;	;i ;"bw;"bw;@;@;:div; o;;iÄ;@Ç;i ;[ ;"	1920;@;@o;;i!;0;"sxtn_ety;	[ ;o;
-;i!;o;	;i!;"u;"u;@;@;;; o;
-;i!;o;	;i!;"bw;"bw;@;@;;!; o;;iê;@Ç;i!;[ ;"	1680;@;@o;;i";0;"frtn_frty;	[ ;o;
-;i";o;	;i";"u;"u;@;@;;; o;
-;i";o;	;i";"bw;"bw;@;@;;!; o;;i†;@Ç;i";[ ;"	1440;@;@o;;i#;0;"tw_hun;	[ ;o;
-;i#;o;	;i#;"u;"u;@;@;;; o;
-;i#;o;	;i#;"bw;"bw;@;@;;!; o;;i∞;@Ç;i#;[ ;"	1200;@;@o;;i$;0;"t_twfr;	[ ;o;
-;i$;o;	;i$;"u;"u;@;@;;; o;
-;i$;o;	;i$;"bw;"bw;@;@;;!; o;;i ;@Ç;i$;[ ;"	1024;@;@o;;i%;0;"n_sxty;	[ ;o;
-;i%;o;	;i%;"u;"u;@;@;;; o;
-;i%;o;	;i%;"bw;"bw;@;@;;!; o;;i¿;@Ç;i%;[ ;"960;@;@o;;i&;0;"et_hun;	[ ;o;
-;i&;o;	;i&;"u;"u;@;@;;; o;
-;i&;o;	;i&;"bw;"bw;@;@;;!; o;;i ;@Ç;i&;[ ;"800;@;@o;;i';0;"s_sxty;	[ ;o;
-;i';o;	;i';"u;"u;@;@;;; o;
-;i';o;	;i';"bw;"bw;@;@;;!; o;;i ;@Ç;i';[ ;"768;@;@o;;i(;0;"sx_hun;	[ ;o;
-;i(;o;	;i(;"u;"u;@;@;;; o;
-;i(;o;	;i(;"bw;"bw;@;@;;!; o;;iX;@Ç;i(;[ ;"600;@;@o;;i);0;"fr_ety;	[ ;o;
-;i);o;	;i);"u;"u;@;@;;; o;
-;i);o;	;i);"bw;"bw;@;@;;!; o;;i‡;@Ç;i);[ ;"480;@;@o;;i*;0;"th_twty;	[ ;o;
-;i*;o;	;i*;"u;"u;@;@;;; o;
-;i*;o;	;i*;"bw;"bw;@;@;;!; o;;i@;@Ç;i*;[ ;"320;@;@o;;i+;0;"tw_frty;	[ ;o;
-;i+;o;	;i+;"u;"u;@;@;;; o;
-;i+;o;	;i+;"bw;"bw;@;@;;!; o;;i;@Ç;i+;[ ;"240;@;@o;
-
-;["/*Device Resolutions */;;;i-;	[ ;@o;;i.;0;"ont;	[ ;o;
-;i.;o;	;i.;"pu;"pu;@;@;;; o;;i¿;@Ç;i.;[ ;"192;@;@o;;i/;0;"otf;	[ ;o;
-;i/;o;	;i/;"pu;"pu;@;@;;; o;;f124.8 33;@Ç;i/;[ ;"
-124.8;@;@o;;i0;0;"oty;	[ ;o;
-;i0;o;	;i0;"pu;"pu;@;@;;; o;;i};@Ç;i0;[ ;"120;@;@o;
-
-;["/* Print Resolutions */;;;i2;	[ ;@o;;i3;0;"hrp;	[ ;o;
-;i3;o;	;i3;"pu;"pu;@;@;;; o;;i,;@Ç;i3;[ ;"300;@;@o;
-
-;["/* 300 dpi/ppi */;;;i3;	[ ;@o;;i4;0;"mrp;	[ ;o;
-;i4;o;	;i4;"pu;"pu;@;@;;; o;;iê;@Ç;i4;[ ;"144;@;@o;
-
-;["/* 144 dpi/ppi */;;;i4;	[ ;@o;;i5;0;"lrp;	[ ;o;
-;i5;o;	;i5;"pu;"pu;@;@;;; o;;ie;@Ç;i5;[ ;"96;@;@o;
-
-;["/* 96 dpi/ppi */;;;i5;	[ ;@o;;i6;0;"wrp;	[ ;o;
-;i6;o;	;i6;"pu;"pu;@;@;;; o;;iM;@Ç;i6;[ ;"72;@;@o;
-
-;["/* 72 dpi/ppi */;;;i6;	[ ;@o;
-
-;["4/*See README for instructions and Examples   */;;;i8;	[ ;@o;
-
-;["w/*------------------------------------*\
-    Viewport Based Media Queries
-\*------------------------------------*/;;;i:;	[ ;@o:Sass::Tree::MediaNode;" ;i=;T:@query[o;	;i=;"_p;"_p;@"
- and "(o;	;i=;"mxw;"mxw;@": o;	;i=;"ntn_twty;"ntn_twty;@"):
-@tabsi ;	[o;
-
-;["/*Viewport width 1920*/;;;i>;	[ ;@;@o;";" ;iA;T;#[o;	;iA;"_p;"_p;@"
- and "(o;	;iA;"mxw;"mxw;@": o;	;iA;"sxtn_ety;"sxtn_ety;@");$i ;	[o;
-
-;["/*Viewport width 1680 */;;;iB;	[ ;@;@o;";" ;iE;T;#[o;	;iE;"_p;"_p;@"
- and "(o;	;iE;"mxw;"mxw;@": o;	;iE;"frtn_frty;"frtn_frty;@");$i ;	[o;
-
-;["/*Viewport width 1440*/;;;iF;	[ ;@;@o;";" ;iI;T;#[o;	;iI;"_p;"_p;@"
- and "(o;	;iI;"mxw;"mxw;@": o;	;iI;"tw_hun;"tw_hun;@");$i ;	[o;
-
-;["/*Viewport width 1200*/;;;iJ;	[ ;@;@o;";" ;iM;T;#[o;	;iM;"_p;"_p;@"
- and "(o;	;iM;"mxw;"mxw;@": o;	;iM;"t_twfr;"t_twfr;@");$i ;	[o;
-
-;["/*Viewport width 1024*/;;;iN;	[ ;@;@o;";" ;iP;T;#[o;	;iP;"_p;"_p;@"
- and "(o;	;iP;"mxw;"mxw;@": o;	;iP;"n_sxty;"n_sxty;@");$i ;	[o;
-
-;["/*Viewport width 960*/;;;iQ;	[ ;@;@o;";" ;iT;T;#[o;	;iT;"_p;"_p;@"
- and "(o;	;iT;"mxw;"mxw;@": o;	;iT;"et_hun;"et_hun;@");$i ;	[o;
-
-;["/*Viewport width 800*/;;;iU;	[ ;@;@o;";" ;iX;T;#[o;	;iX;"_p;"_p;@"
- and "(o;	;iX;"mxw;"mxw;@": o;	;iX;"s_sxty;"s_sxty;@");$i ;	[o;
-
-;["/*Viewport width 768*/;;;iY;	[ ;@;@o;";" ;i\;T;#[o;	;i\;"_p;"_p;@"
- and "(o;	;i\;"mxw;"mxw;@": o;	;i\;"sx_hun;"sx_hun;@");$i ;	[o;
-
-;["/*Viewport width 600*/;;;i];	[ ;@;@o;";" ;i`;T;#[o;	;i`;"_p;"_p;@"
- and "(o;	;i`;"mxw;"mxw;@": o;	;i`;"fr_ety;"fr_ety;@");$i ;	[o;
-
-;["/*Viewport width 480*/;;;ia;	[ ;@;@o;";" ;id;T;#[o;	;id;"_p;"_p;@"
- and "(o;	;id;"mxw;"mxw;@": o;	;id;"th_twty;"th_twty;@");$i ;	[o;
-
-;["/*Viewport width 320*/;;;ie;	[ ;@;@o;";" ;ih;T;#[o;	;ih;"_p;"_p;@"
- and "(o;	;ih;"mxw;"mxw;@": o;	;ih;"tw_frty;"tw_frty;@");$i ;	[o;
-
-;["/*Viewport width 240*/;;;ii;	[ ;@;@o;
-
-;["m/*------------------------------------*\
-    Device Orientation
-\*------------------------------------*/;;;il;	[ ;@o;";" ;io;T;#["(o;	;io;"	or_p;"	or_p;@");$i ;	[o;
-
-;["/*Portrait*/;;;ip;	[ ;@;@o;";" ;is;T;#["(o;	;is;"	or_l;"	or_l;@");$i ;	[o;
-
-;["/*Landscape*/;;;it;	[ ;@;@o;
-
-;["s/*------------------------------------*\
-    High Resolution Displays
-\*------------------------------------*/;;;iw;	[ ;@o;";" ;iz;T;#["(o;	;iz;"w_mndpr;"w_mndpr;@": o;;i;@Ç;iz;[ ;"3;@")", "(o;	;iz;"mnr;"mnr;@": o;	;iz;"ont;"ont;@");$i ;	[o;
-
-;["/*Pixel Density 3*/;;;i{;	[ ;@;@o;";" ;i~;T;#["(o;	;i~;"w_mndpr;"w_mndpr;@": o;;i;@Ç;i~;[ ;"2;@")", "(o;	;i~;"mnr;"mnr;@": o;	;i~;"ont;"ont;@");$i ;	[o;
-
-;["/*Pixel Density 2*/;;;i;	[ ;@;@o;";" ;iÇ;T;#["(o;	;iÇ;"w_mndpr;"w_mndpr;@": o;;f1.5;@Ç;iÇ;[ ;"1.5;@")", "(o;	;iÇ;"mnr;"mnr;@": o;	;iÇ;"otf;"otf;@");$i ;	[o;
-
-;["/*Pixel Density 1.5*/;;;iÉ;	[ ;@;@o;";" ;iÜ;T;#["(o;	;iÜ;"w_mndpr;"w_mndpr;@": o;;i;@Ç;iÜ;[ ;"3;@")", "(o;	;iÜ;"mnr;"mnr;@": o;	;iÜ;"oty;"oty;@");$i ;	[o;
-
-;["/*Pixel Density 1.25*/;;;iá;	[ ;@;@o;
-
-;["`/*------------------------------------*\
-    Print
-\*------------------------------------*/;;;iä;	[ ;@o;";" ;iç;T;#[o;	;iç;"_p;"_p;@"
- and "(o;	;iç;"mnr;"mnr;@": o;	;iç;"hrp;"hrp;@");$i ;	[o;
-
-;["/*High Resolution Print*/;;;ié;	[ ;@;@o;";" ;ië;T;#[o;	;ië;"_p;"_p;@"
- and "(o;	;ië;"mnr;"mnr;@": o;	;ië;"mrp;"mrp;@");$i ;	[o;
-
-;[" /*Medium Resolution Print*/;;;ií;	[ ;@;@o;";" ;iï;T;#[o;	;iï;"_p;"_p;@"
- and "(o;	;iï;"mnr;"mnr;@": o;	;iï;"lrp;"lrp;@");$i ;	[o;
-
-;["/*Low Resolution Print*/;;;iñ;	[ ;@;@o;";" ;iô;T;#[o;	;iô;"_p;"_p;@"
- and "(o;	;iô;"mnr;"mnr;@": o;	;iô;"wrp;"wrp;@");$i ;	[o;
-
-;["/*Web Resolution Print*/;;;iö;	[ ;@;@o;
-
-;["b/*------------------------------------*\
-    Scan:TV
-\*------------------------------------*/;;;iù;	[ ;@o;";" ;i°;T;#[
-o;	;i°;"_t;"_t;@"
- and "(o;	;i°;"	sc_p;"	sc_p;@");$i ;	[o;
-
-;["/*Scan:Progressive*/;;;i¢;	[ ;@;@o;";" ;i•;T;#[
-o;	;i•;"_t;"_t;@"
- and "(o;	;i•;"	sc_i;"	sc_i;@");$i ;	[o;
-
-;["/*Scan:Interlace*/;;;i¶;	[ ;@;@o;
-
-;["f/*------------------------------------*\
-    CSS Level 4
-\*------------------------------------*/;;;i©;	[ ;@o;";" ;i≠;T;#[
-o;	;i≠;"_s;"_s;@"
- and "(o;	;i≠;"hv;"hv;@");$i ;	[o;
-
-;["/*Hover*/;;;iÆ;	[ ;@;@o;";" ;i±;T;#[
-o;	;i±;"_s;"_s;@"
- and "(o;	;i±;"	pt_n;"	pt_n;@");$i ;	[o;
-
-;["/*Pointer:None*/;;;i≤;	[ ;@;@o;";" ;iµ;T;#[
-o;	;iµ;"_s;"_s;@"
- and "(o;	;iµ;"	pt_c;"	pt_c;@");$i ;	[o;
-
-;["/*Pointer:Coarse*/;;;i∂;	[ ;@;@o;";" ;i∏;T;#[
-o;	;i∏;"_s;"_s;@"
- and "(o;	;i∏;"	pt_f;"	pt_f;@");$i ;	[o;
-
-;["/*Pointer:Fine*/;;;iπ;	[ ;@;@o;";" ;iº;T;#[
-o;	;iº;"_s;"_s;@"
- and "(o;	;iº;"	lm_d;"	lm_d;@");$i ;	[o;
-
-;["/*Luminosity:Dim*/;;;iΩ;	[ ;@;@o;";" ;i¿;T;#[
-o;	;i¿;"_s;"_s;@"
- and "(o;	;i¿;"	lm_n;"	lm_n;@");$i ;	[o;
-
-;["/*Luminosity:Normal*/;;;i¡;	[ ;@;@o;";" ;iƒ;T;#[
-o;	;iƒ;"_s;"_s;@"
- and "(o;	;iƒ;"	lm_w;"	lm_w;@");$i ;	[o;
-
-;["/*Luminosity:Washed*/;;;i≈;	[ ;@;@;@
