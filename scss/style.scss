@@ -27,6 +27,7 @@
     Media Types
     -----------
     all
+    aural
     braille
     embossed
     handheld
@@ -173,6 +174,13 @@
     calc()
     toggle()
     attr()
+    
+    Keywords
+    --------
+    all
+    not
+    only
+    (I think I'm forgetting some that are useful)
 \*------------------------------------*/
 
 //WIDTH
@@ -196,8 +204,8 @@ $mndh: "min-device-height";
 $dh: "device-height";
 
 //ORIENTATION
-$or_p: "portrait";
-$or_l: "landscape";
+$or_p: "orientation: portrait";
+$or_l: "orientation: landscape";
 
 //ASPECT-RATIO
 $mxar: "max-aspect-ratio";
@@ -235,8 +243,8 @@ $mnr: "min-resolution";
 $r: "resolution";
 
 //SCAN
-$sc_i: "interlaced";
-$sc_p: "progressive";
+$sc_i: "scan: interlaced";
+$sc_p: "scan: progressive";
  
 //GRID
 $g: "grid";
@@ -259,6 +267,7 @@ $lm_w: "luminosity: washed";
 
 //Media Types
 $_a: "all";
+$_ar: "aural";
 $_b: "braille";
 $_em: "embossed";
 $_h: "handheld";
@@ -353,20 +362,35 @@ $wrp:72+$pu; // 72 dpi/ppi
 }
 
 /*------------------------------------*\
+    Device Orientation
+\*------------------------------------*/
+@media($or_p){
+  /*Portrait*/
+}
+
+@media($or_l){
+  /*Landscape*/
+}
+
+/*------------------------------------*\
     High Resolution Displays
 \*------------------------------------*/
 @media($w_mndpr: 3), ($mnr : $ont){
   /*Pixel Density 3*/
 }
+
 @media($w_mndpr: 2), ($mnr : $ont){
  /*Pixel Density 2*/ 
 }
+
 @media($w_mndpr: 1.5), ($mnr : $otf){
   /*Pixel Density 1.5*/
 }
+
 @media($w_mndpr: 3), ($mnr : $oty){
  /*Pixel Density 1.25*/ 
 }
+
 /*------------------------------------*\
     Print
 \*------------------------------------*/
@@ -384,4 +408,47 @@ $wrp:72+$pu; // 72 dpi/ppi
 
 @media #{$_p} and ($mnr: $wrp){
   /*Web Resolution Print*/
+}
+
+/*------------------------------------*\
+    Scan:TV
+\*------------------------------------*/
+
+@media #{$_t} and ($sc_p){
+  /*Scan:Progressive*/
+}
+
+@media #{$_t} and ($sc_i){
+  /*Scan:Interlace*/
+}
+
+/*------------------------------------*\
+    CSS Level 4
+\*------------------------------------*/
+
+@media #{$_s} and ($hv){
+  /*Hover*/
+}
+
+@media #{$_s} and ($pt_n){
+  /*Pointer:None*/
+}
+
+@media #{$_s} and ($pt_c){
+  /*Pointer:Coarse*/
+}
+@media #{$_s} and ($pt_f){
+  /*Pointer:Fine*/
+}
+
+@media #{$_s} and ($lm_d){
+  /*Luminosity:Dim*/
+}
+
+@media #{$_s} and ($lm_n){
+  /*Luminosity:Normal*/
+}
+
+@media #{$_s} and ($lm_w){
+  /*Luminosity:Washed*/
 }

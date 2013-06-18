@@ -1,0 +1,24 @@
+/*
+Errno::ENOENT: No such file or directory - 
+
+Backtrace:
+/Users/johannaruiz/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/gems/1.8/gems/sass-3.2.8/bin/../lib/sass/../sass/plugin/compiler.rb:339:in `read'
+/Users/johannaruiz/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/gems/1.8/gems/sass-3.2.8/bin/../lib/sass/../sass/plugin/compiler.rb:339:in `update_stylesheet'
+/Users/johannaruiz/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/gems/1.8/gems/sass-3.2.8/bin/../lib/sass/../sass/plugin/compiler.rb:203:in `update_stylesheets'
+/Users/johannaruiz/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/gems/1.8/gems/sass-3.2.8/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `each'
+/Users/johannaruiz/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/gems/1.8/gems/sass-3.2.8/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/johannaruiz/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/gems/1.8/gems/sass-3.2.8/bin/../lib/sass/../sass/plugin/compiler.rb:235:in `watch'
+/Users/johannaruiz/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/gems/1.8/gems/sass-3.2.8/bin/../lib/sass/../sass/plugin.rb:107:in `send'
+/Users/johannaruiz/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/gems/1.8/gems/sass-3.2.8/bin/../lib/sass/../sass/plugin.rb:107:in `method_missing'
+/Users/johannaruiz/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/gems/1.8/gems/sass-3.2.8/bin/../lib/sass/../sass/exec.rb:452:in `watch_or_update'
+/Users/johannaruiz/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/gems/1.8/gems/sass-3.2.8/bin/../lib/sass/../sass/exec.rb:315:in `process_result'
+/Users/johannaruiz/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/gems/1.8/gems/sass-3.2.8/bin/../lib/sass/../sass/exec.rb:41:in `parse'
+/Users/johannaruiz/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/gems/1.8/gems/sass-3.2.8/bin/../lib/sass/../sass/exec.rb:21:in `parse!'
+/Users/johannaruiz/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/gems/1.8/gems/sass-3.2.8/bin/sass:9
+/Users/johannaruiz/.rvm/gems/ree-1.8.7-2011.03/bin/sass:19:in `load'
+/Users/johannaruiz/.rvm/gems/ree-1.8.7-2011.03/bin/sass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory - "; }

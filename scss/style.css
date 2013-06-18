@@ -1,4 +1,9 @@
 /*------------------------------------*\
+    @author Johanna Ruiz (http:johannabruiz.com) 
+    MIT license (http://www.opensource.org/licenses/mit-license.php)
+    Last update: 2013-6-17
+\*------------------------------------*/
+/*------------------------------------*\
     Media Attributes
     ----------------
     width
@@ -22,6 +27,7 @@
     Media Types
     -----------
     all
+    aural
     braille
     embossed
     handheld
@@ -168,6 +174,13 @@
     calc()
     toggle()
     attr()
+    
+    Keywords
+    --------
+    all
+    not
+    only
+    (I think I'm forgetting some that are useful)
 \*------------------------------------*/
 /*------------------------------------*\
     Viewport Based Media Queries
@@ -209,6 +222,15 @@
   /*Viewport width 240*/
 }
 /*------------------------------------*\
+    Device Orientation
+\*------------------------------------*/
+@media (orientation: portrait) {
+  /*Portrait*/
+}
+@media (orientation: landscape) {
+  /*Landscape*/
+}
+/*------------------------------------*\
     High Resolution Displays
 \*------------------------------------*/
 @media (webkit-min-device-pixel-ratio: 3), (min-resolution: 192dpi) {
@@ -237,4 +259,37 @@
 }
 @media print and (min-resolution: 72dpi) {
   /*Web Resolution Print*/
+}
+/*------------------------------------*\
+    Scan:TV
+\*------------------------------------*/
+@media tv and (scan: progressive) {
+  /*Scan:Progressive*/
+}
+@media tv and (scan: interlaced) {
+  /*Scan:Interlace*/
+}
+/*------------------------------------*\
+    CSS Level 4
+\*------------------------------------*/
+@media screen and (hover) {
+  /*Hover*/
+}
+@media screen and (pointer: none) {
+  /*Pointer:None*/
+}
+@media screen and (pointer: coarse) {
+  /*Pointer:Coarse*/
+}
+@media screen and (pointer: fine) {
+  /*Pointer:Fine*/
+}
+@media screen and (luminosity: dim) {
+  /*Luminosity:Dim*/
+}
+@media screen and (luminosity: normal) {
+  /*Luminosity:Normal*/
+}
+@media screen and (luminosity: washed) {
+  /*Luminosity:Washed*/
 }
