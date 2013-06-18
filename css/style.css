@@ -73,6 +73,7 @@ Last update: 2013-6-17
 /*------------------------------------*\
   Hi-Res Display based Media Queries
 \*------------------------------------*/
+
 @media screen and (-webkit-min-device-pixel-ratio: 3),(min-resolution: 192dpi){
 /*Pixel Density 3*/
 }
@@ -171,11 +172,11 @@ Last update: 2013-6-17
             Scan for TV's
 \*------------------------------------*/
 
-@media tv (scan: progressive){
+@media tv and (scan: progressive){
 /*Tv's with progressive scan*/
 }
 
-@media tv (scan: interlace){
+@media tv and (scan: interlace){
 /*Tv's with interlaced scan*/
 }
 
@@ -183,15 +184,15 @@ Last update: 2013-6-17
          Experimentals CSS4
 \*------------------------------------*/
 
-@media screen and (luminosity: dim){
+@media (luminosity: dim){
 /*Dim Luminosity*/
 }
 
-@media screen and (luminosity: normal){
+@media (luminosity: normal){
 /*Normal Luminosity*/
 }
 
-@media screen and (luminosity: washed){
+@media (luminosity: washed){
 /*Washed Luminosity*/
 }
 
@@ -199,14 +200,14 @@ Last update: 2013-6-17
 /*Hover*/
 }
 
-@media screen and (pointer: none){
+@media (pointer: none){
 /*Pointer None*/
 }
 
-@media screen and (pointer: fine){
+@media (pointer: fine){
 /*Pointer Fine*/
 }
 
-@media screen and (pointer: coarse){
+@media (pointer: coarse){
 /*Pointer Coarse*/
 }
