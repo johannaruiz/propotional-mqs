@@ -243,7 +243,7 @@ $mnr: "min-resolution";
 $r: "resolution";
 
 //SCAN
-$sc_i: "scan: interlaced";
+$sc_i: "scan: interlace";
 $sc_p: "scan: progressive";
  
 //GRID
@@ -425,30 +425,33 @@ $wrp:72+$pu; // 72 dpi/ppi
 /*------------------------------------*\
     CSS Level 4
 \*------------------------------------*/
+@media ($sc){
+  /*Script*/
+}
 
-@media #{$_s} and ($hv){
+@media ($hv){
   /*Hover*/
 }
 
-@media #{$_s} and ($pt_n){
+@media ($pt_n){
   /*Pointer:None*/
 }
 
-@media #{$_s} and ($pt_c){
+@media ($pt_c){
   /*Pointer:Coarse*/
 }
-@media #{$_s} and ($pt_f){
+@media ($pt_f){
   /*Pointer:Fine*/
 }
 
-@media #{$_s} and ($lm_d){
+@media ($lm_d){
   /*Luminosity:Dim*/
 }
 
-@media #{$_s} and ($lm_n){
+@media ($lm_n){
   /*Luminosity:Normal*/
 }
 
-@media #{$_s} and ($lm_w){
+@media ($lm_w){
   /*Luminosity:Washed*/
 }

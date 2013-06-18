@@ -266,30 +266,33 @@
 @media tv and (scan: progressive) {
   /*Scan:Progressive*/
 }
-@media tv and (scan: interlaced) {
+@media tv and (scan: interlace) {
   /*Scan:Interlace*/
 }
 /*------------------------------------*\
     CSS Level 4
 \*------------------------------------*/
-@media screen and (hover) {
+@media (script) {
+  /*Script*/
+}
+@media (hover) {
   /*Hover*/
 }
-@media screen and (pointer: none) {
+@media (pointer: none) {
   /*Pointer:None*/
 }
-@media screen and (pointer: coarse) {
+@media (pointer: coarse) {
   /*Pointer:Coarse*/
 }
-@media screen and (pointer: fine) {
+@media (pointer: fine) {
   /*Pointer:Fine*/
 }
-@media screen and (luminosity: dim) {
+@media (luminosity: dim) {
   /*Luminosity:Dim*/
 }
-@media screen and (luminosity: normal) {
+@media (luminosity: normal) {
   /*Luminosity:Normal*/
 }
-@media screen and (luminosity: washed) {
+@media (luminosity: washed) {
   /*Luminosity:Washed*/
 }
