@@ -1,5 +1,5 @@
 /*------------------------------------*\
-Viewport based Media Queries
+     Viewport based Media Queries
 \*------------------------------------*/
 @media screen and (max-width: 120em){	
 /*Viewport = 1920px*/
@@ -50,11 +50,11 @@ Viewport based Media Queries
 }
 
 /*------------------------------------*\
-Orientation base Media Queries
+    Orientation base Media Queries
 \*------------------------------------*/
 
 /*---------------------------------------------------------------------------------------------------------
-Make sure to chain orientations with viewport based media queries to target specific devices screens etc.
+ Make sure to chain orientations with viewport based media queries to target specific devices screens etc.
 ---------------------------------------------------------------------------------------------------------*/
 
 @media screen and (orientation: portrait){
@@ -66,7 +66,7 @@ Make sure to chain orientations with viewport based media queries to target spec
 }
 
 /*------------------------------------*\
-Hi-Res Display based Media Queries
+  Hi-Res Display based Media Queries
 \*------------------------------------*/
 @media(-webkit-min-device-pixel-ratio: 3),(min-resolution: 192dpi){
 /*Pixel Density 3*/
@@ -125,7 +125,7 @@ Hi-Res Display based Media Queries
 }
 
 /*------------------------------------*\
-Color/Color-Index/Monochrome
+     Color/Color-Index/Monochrome
 \*------------------------------------*/
 @media all and (color){
 	/*Color, will take the lowest numeric value unless 0*/
@@ -140,7 +140,7 @@ Color/Color-Index/Monochrome
 }
 
 /*------------------------------------*\
- Print Styles Resolution based
+    Print Styles Resolution based
 \*------------------------------------*/
 
 @media print and (min-resolution: 300dpi){
@@ -163,7 +163,7 @@ Color/Color-Index/Monochrome
 }
 
 /*------------------------------------*\
- Scan for TV's
+            Scan for TV's
 \*------------------------------------*/
 
 @media tv (scan: progressive){
@@ -175,7 +175,7 @@ Color/Color-Index/Monochrome
 }
 
 /*------------------------------------*\
- Experimentals CSS4
+         Experimentals CSS4
 \*------------------------------------*/
 
 @media screen and (luminosity: dim){
