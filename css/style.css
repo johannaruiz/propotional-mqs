@@ -1,7 +1,7 @@
 /*-----------------------------------------------------------------
-	@author Johanna Ruiz (http:johannabruiz.com) 
-	MIT license (http://www.opensource.org/licenses/mit-license.php)
-	Last update: 2013-6-17
+@author Johanna Ruiz (http:johannabruiz.com) 
+MIT license (http://www.opensource.org/licenses/mit-license.php)
+Last update: 2013-6-17
 -----------------------------------------------------------------*/
 /*------------------------------------*\
      Viewport based Media Queries
@@ -73,19 +73,19 @@
 /*------------------------------------*\
   Hi-Res Display based Media Queries
 \*------------------------------------*/
-@media(-webkit-min-device-pixel-ratio: 3),(min-resolution: 192dpi){
+@media screen and (-webkit-min-device-pixel-ratio: 3),(min-resolution: 192dpi){
 /*Pixel Density 3*/
 }
 
-@media(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi){
+@media screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi){
 /*Pixel Density 2*/
 }
 
-@media(-webkit-min-device-pixel-ratio: 1.5),(min-resolution: 124.8dpi){
+@media screen and (-webkit-min-device-pixel-ratio: 1.5),(min-resolution: 124.8dpi){
 /*Pixel Density 1.5*/
 }
 
-@media(-webkit-min-device-pixel-ratio: 1.25),(min-resolution: 120dpi){
+@media screen and (-webkit-min-device-pixel-ratio: 1.25),(min-resolution: 120dpi){
 /*Pixel Density 1.25*/
 }
 
@@ -133,15 +133,15 @@
      Color/Color-Index/Monochrome
 \*------------------------------------*/
 @media all and (color){
-	/*Color, will take the lowest numeric value unless 0*/
+/*Color, will take the lowest numeric value unless 0*/
 }
 
 @media all and (color-index){
-	/*Color Index e.g.256, 512 etc...*/
+/*Color Index e.g.256, 512 etc...*/
 }
 
 @media all and (monochrome){
-	/*Monochrom Display, not Kindle though, it thinks it's color*/
+/*Monochrom Display, not Kindle though, it thinks it's color*/
 }
 
 /*------------------------------------*\
@@ -191,7 +191,7 @@
 /*Normal Luminosity*/
 }
 
-@meida screen and (luminosity: washed){
+@media screen and (luminosity: washed){
 /*Washed Luminosity*/
 }
 
