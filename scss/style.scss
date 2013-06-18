@@ -279,12 +279,17 @@ $_ty: "tty";
 $_t: "tv";
 $tdg: "3d-glasses";
 
+//A list (array) of media types to use in dynamically creating media queries
+$media-types: $_a, $_ar, $_b, $_em, $_h, $_p, $_pr, $_s, $_sp, $_ty, $_t, $tdg;
+
 
 //Targets 
 $bw: 16; // Base Width of 16.
 $u: "em"; // Relative Unit used can be em, rem, % etc... Any one that you prefer.
 $pu: "dpi"; // Print Resolution Unit
 
+
+//Viewports
 $ntn_twty:1920/$bw+$u;
 $sxtn_ety:1680/$bw+$u;
 $frtn_frty:1440/$bw+$u;
@@ -298,7 +303,11 @@ $fr_ety:480/$bw+$u;
 $th_twty:320/$bw+$u;
 $tw_frty:240/$bw+$u;
 
-//Device Resolutions
+// A list(array) of viewports to use in dynamically creating media media queries
+$viewports: $ntn_twty, $sxtn_ety, $frtn_frty, $tw_hun, $t_twfr, $n_sxty, $et_hun, $s_sxty, $sx_hun, $fr_ety, $th_twty, $tw_frty;
+
+
+//Device Resolutions dpi, can use dppx or whatever 
 $ont: 192+$pu;
 $otf: 124.8+$pu;
 $oty: 120+$pu;
@@ -309,6 +318,7 @@ $mrp:144+$pu; // 144 dpi/ppi
 $lrp:96+$pu; // 96 dpi/ppi
 $wrp:72+$pu; // 72 dpi/ppi
 
+
 //See README for instructions and Examples  
 
 /*------------------------------------*\
@@ -318,46 +328,46 @@ $wrp:72+$pu; // 72 dpi/ppi
   /*Viewport width 1920*/
 }
 
-@media #{$_p} and ($mxw: $sxtn_ety){
+@media #{$_s} and ($mxw: $sxtn_ety){
   /*Viewport width 1680 */
 }
 
-@media #{$_p} and ($mxw: $frtn_frty){
+@media #{$_s} and ($mxw: $frtn_frty){
   /*Viewport width 1440*/
 }
 
-@media #{$_p} and ($mxw: $tw_hun){
+@media #{$_s} and ($mxw: $tw_hun){
   /*Viewport width 1200*/
 }
 
-@media #{$_p} and ($mxw: $t_twfr){
+@media #{$_s} and ($mxw: $t_twfr){
   /*Viewport width 1024*/
 }
-@media #{$_p} and ($mxw: $n_sxty){
+@media #{$_s} and ($mxw: $n_sxty){
   /*Viewport width 960*/
 }
 
-@media #{$_p} and ($mxw: $et_hun){
+@media #{$_s} and ($mxw: $et_hun){
   /*Viewport width 800*/
 }
 
-@media #{$_p} and ($mxw: $s_sxty){
+@media #{$_s} and ($mxw: $s_sxty){
   /*Viewport width 768*/
 }
 
-@media #{$_p} and ($mxw: $sx_hun){
+@media #{$_s} and ($mxw: $sx_hun){
   /*Viewport width 600*/
 }
 
-@media #{$_p} and ($mxw: $fr_ety){
+@media #{$_s} and ($mxw: $fr_ety){
   /*Viewport width 480*/
 }
 
-@media #{$_p} and ($mxw: $th_twty){
+@media #{$_s} and ($mxw: $th_twty){
   /*Viewport width 320*/
 }
 
-@media #{$_p} and ($mxw: $tw_frty){
+@media #{$_s} and ($mxw: $tw_frty){
   /*Viewport width 240*/
 }
 
@@ -455,3 +465,5 @@ $wrp:72+$pu; // 72 dpi/ppi
 @media ($lm_w){
   /*Luminosity:Washed*/
 }
+
+//@media #{nth($media-types, 8)} and ($mxw: $ntn_twty) {}
