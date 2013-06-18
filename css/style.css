@@ -85,7 +85,7 @@ Hi-Res Display based Media Queries
 }
 
 /*------------------------------------*\
-Aspect Ratio Can accept min/max values
+ Aspect Ratio Can accept min/max values
 \*------------------------------------*/
 
 @media screen and (aspect-ratio: 1/1){
@@ -140,7 +140,7 @@ Color/Color-Index/Monochrome
 }
 
 /*------------------------------------*\
-Print Styles Resolution based
+ Print Styles Resolution based
 \*------------------------------------*/
 
 @media print and (min-resolution: 300dpi){
@@ -163,7 +163,7 @@ Print Styles Resolution based
 }
 
 /*------------------------------------*\
-Scan for TV's
+ Scan for TV's
 \*------------------------------------*/
 
 @media tv (scan: progressive){
@@ -175,7 +175,7 @@ Scan for TV's
 }
 
 /*------------------------------------*\
-Experimentals CSS4
+ Experimentals CSS4
 \*------------------------------------*/
 
 @media screen and (luminosity: dim){
