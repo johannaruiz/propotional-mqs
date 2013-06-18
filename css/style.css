@@ -1,133 +1,131 @@
 /*------------------------------------*\
-    Viewport based Media Queries
+	Viewport based Media Queries
 \*------------------------------------*/
 @media screen and (max-width: 120em){	
-	/*Viewport = 1920px*/
+/*Viewport = 1920px*/
 }
 
 @media screen and (max-width: 105em){
-	/*Viewport = 1680px*/
+/*Viewport = 1680px*/
 }
 
 @media screen and (max-width: 87.5em){
-	/*Viewport = 1400px*/
+/*Viewport = 1400px*/
 }
 
 @media screen and (max-width: 75em){	
-	/*Viewport = 1200px*/
+/*Viewport = 1200px*/
 }
 
 @media screen and (max-width: 64em){	
-	/*Viewport = 1024px*/
+/*Viewport = 1024px*/
 }
 
 @media screen and (max-width: 60em){
-	/*Viewport = 960px*/
+/*Viewport = 960px*/
 }
 
 @media screen and (max-width : 50em){
-	/*Viewport = 800px*/
+/*Viewport = 800px*/
 }
 
 @media screen and (max-width : 48em){	
-	/*Viewport = 768px*/
+/*Viewport = 768px*/
 }
 
 @media screen and (max-width: 37.5em){
-	/*Viewport = 600px*/
+/*Viewport = 600px*/
 }
 
 @media screen and (max-width: 30em){
-	/*Viewport = 480px*/
+/*Viewport = 480px*/
 }
 
 @media screen and (max-width: 20em){
-	/*Viewport = 320px*/
+/*Viewport = 320px*/
 }
 
 @media screen and (max-width: 15em){
-	/*Viewport = 240px*/
+/*Viewport = 240px*/
 }
 
 /*------------------------------------*\
-    Orientation base Media Queries
+	Orientation base Media Queries
 \*------------------------------------*/
 
-/*-----------------------------------------------
-	Make sure to chain orientations with viewport 
-	based media queries to target specific devices
-	screens etc.
------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------
+	Make sure to chain orientations with viewport based media queries to target specific devices screens etc.
+---------------------------------------------------------------------------------------------------------*/
+
 @media screen and (orientation: portrait){
-	/*Portrait Orientation (device specific)*/
+/*Portrait Orientation (device specific)*/
 }
 
 @media screen and (orientation: landscape){
-	/*Landscape Orientation (device specific)*/
+/*Landscape Orientation (device specific)*/
 }
 
 /*------------------------------------*\
-    Hi-Res Display based Media Queries
+	Hi-Res Display based Media Queries
 \*------------------------------------*/
 @media(-webkit-min-device-pixel-ratio: 3),(min-resolution: 192dpi){
-	/*Pixel Density 3*/
+/*Pixel Density 3*/
 }
 
 @media(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi){
-	/*Pixel Density 2*/
+/*Pixel Density 2*/
 }
 
 @media(-webkit-min-device-pixel-ratio: 1.5),(min-resolution: 124.8dpi){
-	/*Pixel Density 1.5*/
+/*Pixel Density 1.5*/
 }
 
 @media(-webkit-min-device-pixel-ratio: 1.25),(min-resolution: 120dpi){
-	/*Pixel Density 1.25*/
+/*Pixel Density 1.25*/
 }
 
 /*------------------------------------*\
-    Aspect Ratio
-		Can accept min/max values
+	Aspect Ratio Can accept min/max values
 \*------------------------------------*/
 
 @media screen and (aspect-ratio: 1/1){
-	/*Aspect Ratio 1:1*/
+/*Aspect Ratio 1:1*/
 }
 
 @media screen and (aspect-ratio: 3/2){
-	/*Aspect Ratio 3:2*/
+/*Aspect Ratio 3:2*/
 }
 
 @media screen and (aspect-ratio: 4/3){
-	/*Aspect Ratio 4:3*/
+/*Aspect Ratio 4:3*/
 }
 
 @media screen and (aspect-ratio: 5/4){
-	/*Aspect Ratio 5:4*/
+/*Aspect Ratio 5:4*/
 }
 
 @media screen and (aspect-ratio: 8/5){
-	/*Aspect Ratio 8:5*/
+/*Aspect Ratio 8:5*/
 }
 
 @media screen and (aspect-ratio: 9/6){
-	/*Aspect Ratio 9:6*/
+/*Aspect Ratio 9:6*/
 }
 
 @media screen and (aspect-ratio: 13/11){
-	/*Aspect Ratio 13:11*/
+/*Aspect Ratio 13:11*/
 }
 
 @media screen and (aspect-ratio: 16/9){
-	/*Aspect Ratio 16:9*/
+/*Aspect Ratio 16:9*/
 }
 
 @media screen and (aspect-ratio: 21/9){
-	/*Aspect Ratio 21:9*/
+/*Aspect Ratio 21:9*/
 }
 
 /*------------------------------------*\
-    Color/Color-Index/Monochrome
+	Color/Color-Index/Monochrome
 \*------------------------------------*/
 @media all and (color){
 	/*Color, will take the lowest numeric value unless 0*/
@@ -142,65 +140,68 @@
 }
 
 /*------------------------------------*\
-    Print Styles Resolution based
+	Print Styles Resolution based
 \*------------------------------------*/
+
 @media print and (min-resolution: 300dpi){
-	/*Print Resolution 300 dpi*/
+/*Print Resolution 300 dpi*/
 }
 
 @media print and (min-resolution:144dpi){
-	/*Print Resolution 144 dpi*/
+/*Print Resolution 144 dpi*/
 }
 
 @media print and (min-resolution:96dpi){
-	/*Print Resolution 96 dpi*/
+/*Print Resolution 96 dpi*/
 }
 
 @media print and (resolution:72dpi){
-	/*Print Resolution 72 dpi*/
+/*Print Resolution 72 dpi*/
 }
 @media print{
-	/*Generic Print Styles*/
+/*Generic Print Styles*/
 }
 
 /*------------------------------------*\
-    Scan for TV's
+	Scan for TV's
 \*------------------------------------*/
+
 @media tv (scan: progressive){
-	/*Tv's with progressive scan*/
+/*Tv's with progressive scan*/
 }
 
 @media tv (scan: interlace){
-	/*Tv's with interlaced scan*/
+/*Tv's with interlaced scan*/
 }
 
 /*------------------------------------*\
-    Experimentals CSS4
+	Experimentals CSS4
 \*------------------------------------*/
+
 @media screen and (luminosity: dim){
-	/*Dim Luminosity*/
+/*Dim Luminosity*/
 }
 
 @media screen and (luminosity: normal){
-	/*Normal Luminosity*/
+/*Normal Luminosity*/
 }
 
 @meida screen and (luminosity: washed){
-	/*Washed Luminosity*/
+/*Washed Luminosity*/
 }
 
 @media (hover){
-	/*Hover*/
+/*Hover*/
 }
 
 @media screen and (pointer: none){
-	/*Pointer None*/
+/*Pointer None*/
 }
 
 @media screen and (pointer: fine){
-	/*Pointer Fine*/
+/*Pointer Fine*/
 }
 
 @media screen and (pointer: coarse){
-	/*Pointer Coarse*/
+/*Pointer Coarse*/
 }
