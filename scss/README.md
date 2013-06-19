@@ -87,8 +87,8 @@ Below is an example of using the @mixin, @content @include directives to make co
 
 ###SCSS###
 
-*This example of dynamically creating a list of media queries from lists, one list for the media type and a second list for the viewport.*
-*My goal is to create the ability to dynamically create media queries by combining this method with the top method by using @mixin and @content.*
+*This example of dynamically creating a list of media queries from lists, one list for the media type and a second list for the viewport.*  
+*My goal ultimately is to achieve the ability to dynamically create media queries by combining this method with the top method by using directives such as @mixin and @content combined with some form of control directive such as @if/@else, @for, @each or @while and @else. Possibly having to create a custom @function. Still trying to figure that out.*
 <pre>
   <code>
     @each $vp in $viewports{
