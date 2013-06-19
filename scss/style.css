@@ -185,7 +185,7 @@
 /*------------------------------------*\
     Viewport Based Media Queries
 \*------------------------------------*/
-@media print and (max-width: 120em) {
+@media screen and (max-width: 120em) {
   /*Viewport width 1920*/
 }
 @media screen and (max-width: 105em) {

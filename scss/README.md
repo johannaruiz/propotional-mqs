@@ -17,19 +17,45 @@ Below is an example of using the @mixin, @content @include directives to make co
 ###SCSS
 <pre>
   <code>
-    @mixin pmq($bp){
-      @if $bp == small{ 
+    @mixin pmq($vp){
+      @if $vp == small{ 
         @media #{$_s} and ($w: $tw_frty){ 
           @content; 
         }
       }
-      @else if $bp == medium{ 
+      @else if $vp == medium{ 
         @media #{$_s} and ($w: $th_twty){ 
           @content; 
         }
       }
     }
     
+    @include pmq(small){
+      body{
+        width:100%;
+      }
+    }
+    @include pmq(medium){
+      body{
+        width:95%
+      }
+    }
+    
+    *The same method above but referencing an item of a list*
+    
+    @mixin pmq($vp){
+      @if $vp == #{nth($viewports, 12)}{ 
+        @media #{$_s} and ($w: $tw_frty){ 
+          @content; 
+        }
+      }
+      @else if $vp == #{nth($viewports, 11)}{ 
+        @media #{$_s} and ($w: $th_twty){ 
+          @content; 
+        }
+      }
+    }
+
     @include pmq(small){
       body{
         width:100%;
@@ -58,5 +84,62 @@ Below is an example of using the @mixin, @content @include directives to make co
     }
   </code>
 </pre>
+
+###SCSS###
+
+*This example of dynamically creating a list of media queries from lists, one list for the media type and a second list for the viewport.*
+
+<pre>
+  <code>
+    @each $vp in $viewports{
+      @media #{nth($media-types, 8)} and ($vp){
+        /**/
+      }
+    }
+  </code>
+</pre>
+
+###CSS Output###
+<pre>
+  <code>
+    @media screen and (120em) {
+      /**/
+    }
+    @media screen and (105em) {
+      /**/
+    }
+    @media screen and (90em) {
+      /**/
+    }
+    @media screen and (75em) {
+      /**/
+    }
+    @media screen and (64em) {
+      /**/
+    }
+    @media screen and (60em) {
+      /**/
+    }
+    @media screen and (50em) {
+      /**/
+    }
+    @media screen and (48em) {
+      /**/
+    }
+    @media screen and (37.5em) {
+      /**/
+    }
+    @media screen and (30em) {
+      /**/
+    }
+    @media screen and (20em) {
+      /**/
+    }
+    @media screen and (15em) {
+      /**/
+    }
+  </code>
+</pre>
+
 
 

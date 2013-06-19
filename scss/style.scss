@@ -306,6 +306,11 @@ $tw_frty:240/$bw+$u;
 // A list(array) of viewports to use in dynamically creating media media queries
 $viewports: $ntn_twty, $sxtn_ety, $frtn_frty, $tw_hun, $t_twfr, $n_sxty, $et_hun, $s_sxty, $sx_hun, $fr_ety, $th_twty, $tw_frty;
 
+//@each $vp in $viewports{
+//  @media #{nth($media-types, 8)} and ($vp){
+//  }
+//}
+
 
 //Device Resolutions dpi, can use dppx or whatever 
 $ont: 192+$pu;
@@ -324,7 +329,7 @@ $wrp:72+$pu; // 72 dpi/ppi
 /*------------------------------------*\
     Viewport Based Media Queries
 \*------------------------------------*/
-@media #{$_p} and ($mxw: $ntn_twty){
+@media #{$_s} and ($mxw: $ntn_twty){
   /*Viewport width 1920*/
 }
 
